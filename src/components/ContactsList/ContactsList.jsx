@@ -28,8 +28,8 @@ export const ContactsList = () => {
         const { id, name, number } = contact;
         return (
           <li key={id}>
-            <span>{name}:</span>
-            <span>{number}</span>
+            <div>{name}</div>
+            <div>{number}</div>
             <button type="button" onClick={() => handleDelete(id)}>
               Delete
             </button>
