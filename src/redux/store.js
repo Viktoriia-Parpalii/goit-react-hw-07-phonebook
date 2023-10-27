@@ -16,7 +16,7 @@ const { contactsReducer } = require('./contacts');
 const contactsConfig = {
   key: 'contacts',
   storage,
-  whitelist: ['contacts'],
+  whitelist: ['contacts.items'],
 };
 export const store = configureStore({
   reducer: {
