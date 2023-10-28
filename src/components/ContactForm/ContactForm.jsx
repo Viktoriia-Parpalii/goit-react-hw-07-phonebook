@@ -1,6 +1,5 @@
 import css from './ContactForm.module.css';
 import React, { useState } from 'react';
-import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts';
 
@@ -34,7 +33,6 @@ export const ContactForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const userContacts = {
-      id: nanoid(),
       name,
       number,
     };
